@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+		let num1 = parseFloat(prompt('Введите число №1'))
+		let num2 = parseFloat(prompt('Введите число №2'))
+		let sum = (num1 + num2).toFixed(3)
+		let multipl = (num1 * num2).toFixed(3)
+		let divis = (num1 / num2).toFixed(3)
+		document.write(`			
+		<table border=1px>
+		 	<tr>
+    			<td>число №1+число №2</td>
+    			<td>число №1*число №2</td>
+    			<td>число №1/число №2</td>
+  			</tr>
+  			<tr>
+    			<td>${sum}</td>
+    			<td>${multipl}</td>
+    			<td>${divis}</td>
+  			</tr>
+		</table >
+		`)
+	
+</script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+		const taxOfProduct = 0.05
+		const priceOfProduct = parseFloat(prompt('Введите стоимость товара:', '0'))
+		const quantOfProduct = parseInt(prompt('Введите количество товара', '0'))
+		let totalPriceOfProduct = (priceOfProduct * quantOfProduct)
+		let totalTaxOfProduct = (totalPriceOfProduct * taxOfProduct).toFixed(2)
+		document.write(`Общая стоимость товара - ${totalPriceOfProduct} грн; НДС - ${totalTaxOfProduct} грн `)
+    </script>
+</body>
+</html>

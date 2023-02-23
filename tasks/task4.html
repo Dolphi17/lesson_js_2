@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+		const length = parseFloat(prompt('Введите длину в сантиметрах', '0')).toFixed(5)
+		let lengthInMeters = (length / 100).toFixed(5)
+		let lengthInKilometers = (length / 100000).toFixed(5)
+		document.write(`${length} сантиметров = ${lengthInMeters} метров или ${lengthInKilometers} километров`)
+    </script>
+</body>
+</html>

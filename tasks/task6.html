@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      
+		const price1 = parseFloat(prompt('Введите стоимость первого товара:', '0'))
+		const quantity1 = parseInt(prompt('Введите количество первого товара:', '0'))
+		const price2 = parseFloat(prompt('Введите стоимость второго товара:', '0'))
+		const quantity2 = parseInt(prompt('Введите количество второго товара:', '0'))
+		const price3 = parseFloat(prompt('Введите стоимость третьего товара:', '0'))
+		const quantity3 = parseInt(prompt('Введите количество третьего товара:', '0'))
+		let totalPrice1 = (price1 * quantity1)
+		let totalPrice2 = (price2 * quantity2)
+		let totalPrice3 = (price3 * quantity3)
+    let totalQuantity = (quantity1 + quantity2 + quantity3)
+		let totalPriceOfAll = (totalPrice1 + totalPrice2 + totalPrice3)
+
+		document.write(`
+    <table border=2px>			
+		  <tr>
+    			<td>Стоимость</td>
+    			<td>Количество</td>
+    			<td>Сумма</td>
+  		</tr>
+			<tr>
+    			<td>Первый товар:${price1.toFixed(3)}</td>
+    			<td>${quantity1}</td>
+    	    <td>${totalPrice1.toFixed(3)}</td>
+  		</tr>
+  		<tr>
+    			<td>Второй товар:${price2.toFixed(3)}</td>
+    			<td>${quantity2}</td>
+    			<td>${totalPrice2.toFixed(3)}</td>
+  		</tr>
+			<tr>
+    			<td>Третий товар:${price3.toFixed(3)}</td>
+    			<td>${quantity3}</td>
+    			<td>${totalPrice3.toFixed(3)}</td>
+  		</tr>
+			<tr>
+    			<td>Всего</td>
+    			<td>${totalQuantity}</td>
+    			<td>${totalPriceOfAll.toFixed(3)}</td>
+  		</tr>
+		</table >
+		`)
+	
+    </script>
+  </body>
+</html>
